@@ -1,6 +1,7 @@
 package com.rohit2810.spotit
 
 import android.service.notification.StatusBarNotification
+import timber.log.Timber
 
 fun extractSpotifyNotification(barNotification: StatusBarNotification): Array<String> {
     val extras = barNotification.notification.extras
@@ -15,6 +16,8 @@ fun extractJioSaavnNotification(barNotification: StatusBarNotification): Array<S
     val extras = barNotification.notification.extras
     val notificationTitle: String = extras.getString("android.title", "Title")
     val notificationText: String = extras.getString("android.text", "Text")
+
+    Timber.d("$notificationTitle\t$notificationText")
 
     return arrayOf(notificationTitle, notificationText)
 }
