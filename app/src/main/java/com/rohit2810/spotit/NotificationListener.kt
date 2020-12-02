@@ -31,13 +31,17 @@ class NotificationListener : NotificationListenerService() {
 
             val packageName = barNotification.packageName
 
-            if (packageName == "com.spotify.music") {
-                val notificationInfo = extractSpotifyNotification(barNotification)
-                turnOffMediaVolume(notificationInfo)
-            }else if(packageName == "com.jio.media.jiobeats") {
-                val notificationInfo = extractJioSaavnNotification(barNotification)
-                turnOffMediaVolume(notificationInfo)
+            packageName?.let {
+                if (it == "com.spotify.music") {
+                    val notificationInfo = extractSpotifyNotification(barNotification)
+                    turnOffMediaVolume(notificationInfo)
+                }else if(it == "com.jio.media.jiobeats") {
+                    val notificationInfo = extractJioSaavnNotification(barNotification)
+                    turnOffMediaVolume(notificationInfo)
+                }
             }
+
+
 
         }
     }

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#fff</color>
+    <color name="background">#fff</color>
+    <color name="cardBackground">#fff</color>
+    <color name="textHeadingColor">#101010</color>
+    <color name="textSubTitleColor">#202020</color>
+    <color name="errorColor">#ee6352</color>
+    <color name="dividerColor">#404040</color>
 </resources>
