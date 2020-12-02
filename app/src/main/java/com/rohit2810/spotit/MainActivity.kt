@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.NotificationManagerCompat
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,18 +20,30 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-
-
-        btnEnableNotificationListener.setOnClickListener{
+        
+        btnEnableNotificationListener.setOnClickListener {
             openNotificationListenerSettings()
+        }
+
+        btnHowItWorks.setOnClickListener {
+            startActivity(Intent(this, HowItWorksActivity::class.java))
         }
 
     }
 
     private fun openNotificationListenerSettings() {
-        val intent = Intent()
-        intent.action = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"
-        startActivity(intent)
+        try {
+            val intent = Intent()
+            intent.action = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"
+            startActivity(intent)
+        } catch (e: Exception) {
+            Toast.makeText(
+                this,
+                "Please go to settings, Search for notification access and enable notification access for SpotIt",
+                Toast.LENGTH_LONG
+            ).show()
+        }
+
     }
 
 
@@ -38,9 +51,10 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         if (!checkNotificationListenerEnabled()) {
             ivNotificationAccess.setImageResource(R.drawable.icon_notifications_access_disabled)
-            tvNotificationAccessSubtitle.text = "Enable notification access for SpotIt in order to detect advertisements in streaming apps"
+            tvNotificationAccessSubtitle.text =
+                "Enable notification access for SpotIt in order to detect advertisements in streaming apps"
             tvNotificationAccessHeading.setTextColor(resources.getColor(R.color.errorColor))
-        }else {
+        } else {
             ivNotificationAccess.setImageResource(R.drawable.icon_notification_access)
             tvNotificationAccessSubtitle.text = "To detect advertisements in streaming apps"
             tvNotificationAccessHeading.setTextColor(resources.getColor(R.color.textHeadingColor))
@@ -49,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun checkNotificationListenerEnabled(): Boolean {
-        return NotificationManagerCompat.getEnabledListenerPackages(this).contains("com.rohit2810.spotit")
+        return NotificationManagerCompat.getEnabledListenerPackages(this)
+            .contains("com.rohit2810.spotit")
     }
 }

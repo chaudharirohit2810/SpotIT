@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">SpotIt</string>
+    <string name="instruction_details">
+        1. The app works with popular music streaming services like Spotify, JioSaavn and Gaana.\n
+        2. Make sure you have enabled <b>notification access</b> for the app\n
+        3. The app needs to continue running in the background to work properly so turn off <b>battery optimization</b> in the app settings page.
+    </string>
+    <string name="privacy_details">
+        1. The app does not collect any user data.\n
+        2. The app uses user notifications just to detect advertisements in streaming services.\n
+        3. It does not alter or <b>\"hack\"</b> protection measures of music streaming services, and only gathers context information provided by the Android runtime.\n
+        4. The app is open source and you can check source code at Github
+    </string>
+    <string name="github_link"><u>Github Link</u></string>
 </resources>
