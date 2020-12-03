@@ -7,6 +7,7 @@
     <color name="cardBackground">#121212</color>
     <color name="textHeadingColor">#a6d4fa</color>
     <color name="textSubTitleColor">#aaa</color>
+    <color name="textMainColor">#fff</color>
     <color name="errorColor">#ee6352</color>
     <color name="dividerColor">#242424</color>
 </resources>

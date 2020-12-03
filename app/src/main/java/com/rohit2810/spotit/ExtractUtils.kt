@@ -5,10 +5,9 @@ import timber.log.Timber
 
 fun extractSpotifyNotification(barNotification: StatusBarNotification): Array<String> {
     val extras = barNotification.notification.extras
-    val tickerText = barNotification.notification.tickerText.toString()
     val notificationTitle: String = extras.getCharSequence("android.title").toString()
     val notificationText: String = extras.getCharSequence("android.text").toString()
-    return arrayOf(tickerText, notificationTitle, notificationText)
+    return arrayOf(notificationTitle, notificationText)
 }
 
 

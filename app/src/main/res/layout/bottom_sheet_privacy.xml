@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:background="@color/cardBackground"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Privacy:"
+        android:textColor="@color/textHeadingColor"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_details"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/textSubTitleColor"/>
+
+</LinearLayout>

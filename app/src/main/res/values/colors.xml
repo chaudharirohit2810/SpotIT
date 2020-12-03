@@ -9,4 +9,5 @@
     <color name="textSubTitleColor">#202020</color>
     <color name="errorColor">#ee6352</color>
     <color name="dividerColor">#404040</color>
+    <color name="textMainColor">#000</color>
 </resources>

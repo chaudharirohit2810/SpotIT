@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:background="@color/cardBackground"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Running in Background:"
+        android:textColor="@color/textHeadingColor"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/battery_details"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/textSubTitleColor"/>
+
+    <TextView
+        android:id="@+id/btnBatterySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_5_find_your_manufacturer_settings_here"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="0dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/errorColor"/>
+
+</LinearLayout>
