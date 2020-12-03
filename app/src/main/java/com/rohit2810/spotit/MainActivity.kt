@@ -16,17 +16,16 @@ class MainActivity : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
-        supportActionBar?.title = " "
-
+        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
-        
         btnEnableNotificationListener.setOnClickListener {
             openNotificationListenerSettings()
         }
 
         btnHowItWorks.setOnClickListener {
             startActivity(Intent(this, HowItWorksActivity::class.java))
+            overridePendingTransition(R.anim.right_in, R.anim.left_out)
         }
 
     }

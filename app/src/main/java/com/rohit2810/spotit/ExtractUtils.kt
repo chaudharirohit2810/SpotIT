@@ -16,9 +16,6 @@ fun extractJioSaavnNotification(barNotification: StatusBarNotification): Array<S
     val extras = barNotification.notification.extras
     val notificationTitle: String = extras.getString("android.title", "Title")
     val notificationText: String = extras.getString("android.text", "Text")
-
-//    Timber.d("$notificationTitle\t$notificationText")
-
     return arrayOf(notificationTitle, notificationText)
 }
 

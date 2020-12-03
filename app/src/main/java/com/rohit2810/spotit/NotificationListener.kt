@@ -40,7 +40,7 @@ class NotificationListener : NotificationListenerService() {
                         val notificationInfo = extractGaanaNotification(barNotification)
                         turnOffMediaVolume(notificationInfo)
                     }
-//                    logInfo(sbn)
+                    logInfo(sbn)
                 }
             }
         } catch (e: Exception) {
