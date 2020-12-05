@@ -20,8 +20,7 @@
 </p>
 
 ##  👨🏻‍💻 About The Project
-SpotIt is a music streaming advertisement muter. It works with popular music streaming services like Spotify, JioSaavn and Gaana. It detects advertisements using notifications and mutes the streaming audio of your phone. It tries to show flaws in the way how music streaming advertisements work on android.
-
+SpotIt is a music streaming advertisement muter. It works with popular music streaming services like Spotify, JioSaavn and Gaana. It detects advertisements using notifications and mutes the music streaming audio of your phone.
 ## :package: Download
 <img src="download.png" width="200" alt="Download the app">
 
