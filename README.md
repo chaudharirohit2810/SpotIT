@@ -23,7 +23,13 @@
 SpotIt is a music streaming advertisement muter. It works with popular music streaming services like Spotify, JioSaavn and Gaana. It detects advertisements using notifications and mutes the streaming audio of your phone. It tries to show flaws in the way how music streaming advertisements work on android.
 
 ## Download
-Download the app
+<img src="download.png" width="250">
+
+## Screenshots
+<div style="display:flex;">
+<img src="Screenshots/2.jpg" width="150">
+<img src="Screenshots/1.jpg" width="150">
+</div>
 
 ## Privacy
 1. The app does not collect any private data and does not require any network permissions.
