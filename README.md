@@ -1,10 +1,10 @@
 <p align="center">
  
-   <img src="spotit.png" alt="Logo" width="80" height="80">
+   <img src="spotit.png" alt="Logo" width="100" height="100">
 
-  <h3 align="center">SpotIt</h3>
+  <h1 align="center">SpotIt</h3>
 
-  <p align="center">
+  <h3 align="center">
     Music Streaming Advertisement Muter
-  </p>
+  </h3>
 </p>
