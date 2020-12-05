@@ -37,7 +37,7 @@ SpotIt is a music streaming advertisement muter. It detects advertisements in mu
 3. If the advertisement words are found then it mutes the music streaming audio (STREAM_MUSIC) of a device using AudioManager.
 
 ## :smiley: Privacy
-1. The app does not collect any private data and does not require any network permissions.
+1. The app does not collect any private data nor it requires any network permissions.
 2. It uses user notifications to detect advertisements in music streaming services and does not <b>"hack"</b> protection measures of music streaming services
 
 ## :construction_worker: Issues and Feature requests
