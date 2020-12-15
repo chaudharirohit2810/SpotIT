@@ -5,6 +5,7 @@ import android.media.AudioManager
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import timber.log.Timber
+import kotlin.math.max
 
 
 class NotificationListener : NotificationListenerService() {
@@ -68,6 +69,10 @@ class NotificationListener : NotificationListenerService() {
             audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0)
             adFlag = true
         } else {
+            val tempVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)
+            if (tempVolume != currentVolume && tempVolume != 0) {
+                currentVolume = tempVolume
+            }
             audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, currentVolume, 0)
             adFlag = false
         }
