@@ -1,1 +1,1 @@
-Music streaming advertisement muter
+Advertisement muter for Spotify, JioSaavn and Gaana
