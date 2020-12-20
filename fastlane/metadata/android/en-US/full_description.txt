@@ -1,0 +1,14 @@
+Want to avoid ads in spotify, jiosaavn or gaana, then this app is for you.
+
+SpotIT is simple app that detects advertisements in music streaming apps and mutes them so your work doesn't get interrupted by ads.
+
+The app works with popular music streaming services like Spotify, JioSaavn and Gaana.
+
+* Mute ads in Spotify, JioSaavn and Gaana
+* Simple and Intituive UI
+* FOSS Forever
+
+Privacy:
+
+* The app does not collect any private data nor it requires any network permissions.
+* It uses user notifications to detect advertisements in music streaming services and does not "hack" protection measures of music streaming services
