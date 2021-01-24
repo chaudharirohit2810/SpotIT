@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/badge/language-Kotlin-brightgreen">
 
-  <a href="https://www.linkedin.com/in/eliasgcf/">
+  <a>
     <img alt="Made by" src="https://img.shields.io/badge/made%20by-Rohit%20Chaudhari-blueviolet">
   </a>
 
