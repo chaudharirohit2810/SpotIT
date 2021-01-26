@@ -25,3 +25,11 @@ fun extractGaanaNotification(barNotification: StatusBarNotification): Array<Stri
 
     return arrayOf(notificationText, notificationTitle)
 }
+
+fun extractSpotifyLiteNotification(barNotification: StatusBarNotification): Array<String> {
+    val extras = barNotification.notification.extras
+    val notificationTitle: String = extras.getString("android.title", "Title")
+    val notificationText: String = extras.getString("android.text", "Text")
+
+    return arrayOf(notificationText, notificationTitle)
+}
