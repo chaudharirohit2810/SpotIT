@@ -14,7 +14,7 @@ class NotificationListener : NotificationListenerService() {
     private var currentVolume = 50
     private var adFlag = false
 
-    val PACKAGE_NAMES = arrayOf("com.spotify.music", "com.jio.media.jiobeats")
+    val PACKAGE_NAMES = arrayOf("com.spotify.music", "com.jio.media.jiobeats", "com.spotify.lite")
     val TITLES = arrayOf("Advertisement", "-Sponsored Ad")
 
     override fun onCreate() {
@@ -36,6 +36,9 @@ class NotificationListener : NotificationListenerService() {
                         turnOffMediaVolume(notificationInfo)
                     } else if (it == "com.jio.media.jiobeats") {
                         val notificationInfo = extractJioSaavnNotification(barNotification)
+                        turnOffMediaVolume(notificationInfo)
+                    } else if (it == "com.spotify.lite") {
+                        val notificationInfo = extractSpotifyLiteNotification(barNotification)
                         turnOffMediaVolume(notificationInfo)
                     }else if(it == "com.gaana") {
                         val notificationInfo = extractGaanaNotification(barNotification)
